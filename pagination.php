@@ -51,6 +51,6 @@
             if($page_num >= $total_pages){ echo '#'; }else{echo "?level=".$_GET['level']."&page_num=".($page_num + 1)."";}
         }elseif(isset($_GET['difficulty'])){
             if($page_num >= $total_pages){ echo '#'; }else{echo "$url?difficulty=".$_GET['difficulty']."&page_num=".($page_num + 1)."";}
-        }else{ if($page_num >= $total_pages){ echo '#'; }else{echo "?page_num=".($page_num + 1);} } ?>">Следующая</a></li>
+        }else{ if($page_num >= $total_pages){ echo ''; }else{echo "?page_num=".($page_num + 1);} } ?>">Следующая</a></li>
   </ul>
 </nav>
